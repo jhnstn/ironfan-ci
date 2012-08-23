@@ -1,4 +1,3 @@
-
 ### Install ironfan-homebase
 
 Clone this repo, producing the directory we'll call `homebase` from now on. In fact, you may wish to rename it:
@@ -44,7 +43,7 @@ You should now be able to list all templates:
         $ vagrant basebox templates
         The following templates are available:
         # ....
-        vagrant basebox define '<boxname>' 'ubuntu-10.10-server-amd64'-netboot'
+        vagrant basebox define '<boxname>' 'ubuntu-10.10-server-amd64-netboot'
         # ...
         vagrant basebox define '<boxname>' 'ubuntu-11.10-server-amd64-ruby192'
 
@@ -55,6 +54,7 @@ You should now be able to list all templates:
 Now move into the vagrants/ subdirectory and run
 
         $ cd ironfan_homebase/vagrants
+        $ vagrant basebox define 'ironfan-natty' 'ubuntu-10.10-server-amd64-netboot'
         $ vagrant basebox build 'ironfan-natty'
 
 If you don't have the iso file it will download it for you. The ISO file is huge, and will probably take about 30 minutes to pull in.
